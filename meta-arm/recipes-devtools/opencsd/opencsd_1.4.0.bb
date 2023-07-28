@@ -45,3 +45,6 @@ do_install() {
 }
 
 BBCLASSEXTEND = "native"
+
+# Required by /usr/bin/coresight-sysfs.sh
+RDEPENDS:${PN} += "bash"
